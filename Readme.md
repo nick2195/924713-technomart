@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Коля Юферев](https://up.htmlacademy.ru/htmlcss/23/user/924713).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
