@@ -8,8 +8,12 @@
 <header class="main-header">
   <div class="header-up">
     <a class="main-header-logo">Техномарт</a>
-    <p>Поиск:<br>
-   <input type="text" size="20"></p>
+    <form class="search-form" action="#" method="post">
+    <p class="search-inside-form">
+      <input type="text" name="search" placeholder="Поиск:">
+    </p>
+    <button class="visually-hidden" type="submit"></button>
+    </form>
     <span class="bookmarks">Закладки:0</span>
     <span class="stash">Корзина:0</span>
     <a class="btn-order" href="#">Оформить заказ</a>
@@ -50,27 +54,50 @@
     <li><a href="#">Перфораторы</a></li>
   </ul>
   <h1 class="page-title">Перфораторы</h1>
-     <div class="firm-by">
-       <p>ПРОИЗВОДИТЕЛИ:</p>
-       <ul class="firms">
-         <li>BOSCH</li>
-         <li>ИНТЕРСКОЛ</li>
-         <li>MAKITA</li>
-         <li>DEWALT</li>
-         <li>HITACHI</li>
+    <form class="filter" action="#" method="post">
+     <fieldset>
+      <legend>ПРОИЗВОДИТЕЛИ:</legend>
+        <ul class="firms">
+         <li>
+          <input type="checkbox" name="Bosch" id="filter-Bosch" checked>
+          <label for="filter-Bosch">BOSCH</label>
+         </li>
+         <li>
+          <input type="checkbox" name="Interscol" id="filter-Interscol">
+          <label for="filter-Interscol">ИНТЕРСКОЛ</label>
+         </li>
+         <li>
+          <input type="checkbox" name="Makita" id="filter-Makita" checked>
+          <label for="filter-Makita">MAKITA</label>
+         </li>
+         <li>
+          <input type="checkbox" name="Dewalt" id="filter-Dewalt">
+          <label for="filter-Dewalt">DEWALT</label>
+         </li>
+         <li>
+          <input type="checkbox" name="Hitachi" id="filter-Hitachi">
+          <label for="filter-Hitachi">HITACHI</label>
+         </li>
        </ul>
-     </div>
-     <div class="supply">
-       <p>ПИТАНИЕ:</p>
+     </fieldset>
+     <fieldset>
+       <legend>ПИТАНИЕ:</legend>
        <ul class="supply-list">
-         <li>АККУМУЛЯТОРНЫЕ</li>
-         <li>СЕТЕВЫЕ</li>
+         <li>
+           <input type="radio" name="supply-list" value="accumulator" id="filter-accumulator">
+           <label for="filter-accumulator">АККУМУЛЯТОРНЫЕ</label>
+         </li>
+         <li>
+           <input type="radio" name="supply-list" value="networked" id="filter-networked">
+           <label for="filter-networked">СЕТЕВЫЕ</label>
+         </li>
        </ul>
-     </div>
+     </fieldset>
      <button type="submit" class="btn-show">Показать</button>
+   </form>
 
-   <section class="goods">
-     <div class="BFG-3000">
+ <section class="goods">
+    <div class="BFG-3000">
        <h3 class="goods-each-header">Перфоратор BOSCH<br>
        BFG 3000<br>
        </h3>
@@ -79,8 +106,8 @@
        <a class="goods-buy" href="#">15500 P.</a>
        <a class="button-goods-basket" href="#">КУПИТЬ</a>
        <a class="button-goods-bookmark" href="#">В ЗАКЛАДКИ</a>
-     </div>
-     <div class="BFG-6000">
+    </div>
+    <div class="BFG-6000">
        <h3 class="goods-each-header">Перфоратор BOSCH<br>
        BFG 6000<br>
        </h3>
@@ -118,8 +145,8 @@
       <a class="goods-buy" href="#">25500 P.</a>
       <a class="button-goods-basket" href="#">КУПИТЬ</a>
       <a class="button-goods-bookmark" href="#">В ЗАКЛАДКИ</a>
-   </div>
-   <div class="BFG-2000">
+    </div>
+    <div class="BFG-2000">
       <h3 class="goods-each-header">Перфоратор BOSCH<br>
       BFG 2000<br>
       </h3>
@@ -127,8 +154,8 @@
       <a class="goods-buy" href="#">12500 P.</a>
       <a class="button-goods-basket" href="#">КУПИТЬ</a>
       <a class="button-goods-bookmark" href="#">В ЗАКЛАДКИ</a>
-   </div>
-   <div class="BFG-3000">
+    </div>
+    <div class="BFG-3000">
      <h3 class="goods-each-header">Перфоратор BOSCH<br>
      BFG 3000<br>
      </h3>
@@ -137,8 +164,8 @@
      <a class="goods-buy" href="#">15500 P.</a>
      <a class="button-goods-basket" href="#">КУПИТЬ</a>
      <a class="button-goods-bookmark" href="#">В ЗАКЛАДКИ</a>
-   </div>
-   <div class="BFG-6000">
+    </div>
+    <div class="BFG-6000">
      <h3 class="goods-each-header">Перфоратор BOSCH<br>
      BFG 6000<br>
      </h3>
@@ -147,8 +174,8 @@
      <a class="goods-buy" href="#">25500 P.</a>
      <a class="button-goods-basket" href="#">КУПИТЬ</a>
      <a class="button-goods-bookmark" href="#">В ЗАКЛАДКИ</a>
-  </div>
-  <div class="BFG-2000">
+    </div>
+    <div class="BFG-2000">
      <h3 class="goods-each-header">Перфоратор BOSCH<br>
      BFG 2000<br>
      </h3>
@@ -156,9 +183,14 @@
      <a class="goods-buy" href="#">12500 P.</a>
      <a class="button-goods-basket" href="#">КУПИТЬ</a>
      <a class="button-goods-bookmark" href="#">В ЗАКЛАДКИ</a>
-  </div>
-   </section>
-
+    </div>
+  </section>
+  <section class="add-goods">
+   <h2 class="header-add-goods">Товар добавлен в корзину!</h2>
+   <a class="btn-checkout" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+   <a class="continue-shopping" href="catalog.html">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+   <button class="modal-close" type="button">Закрыть</button>
+  </section>
 </main>
 
   <footer class="main-footer">

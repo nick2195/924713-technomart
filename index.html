@@ -8,8 +8,12 @@
 <header class="main-header">
   <div class="header-up">
     <a class="main-header-logo">Техномарт</a>
-    <p>Поиск:
-   <input type="text" size="20"></p>
+    <form class="search-form" action="#" method="post">
+    <p class="search-inside-form">
+      <input type="text" name="search" placeholder="Поиск:">
+    </p>
+    <button class="visually-hidden" type="submit"></button>
+    </form>
     <span class="bookmarks">Закладки:0</span>
     <span class="stash">Корзина:0</span>
     <a class="btn-order" href="#">Оформить заказ</a>
@@ -24,7 +28,7 @@
      <p>г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
     </div>
     <ul class="acсess">
-      <li><a class="btn-search" href="#">Поиск</a></li>
+      <li><a class="btn-access" href="#">Войти</a></li>
       <li><a class="btn-registration" href="#">Регистрация</a></li>
     </ul>
   <div class="navigation">
@@ -66,6 +70,41 @@
 </a>
 <a class="button-about-2" href="#">ЗАБУЛДИЛИСЬ?НАПИШИТЕ НАМ!</a>
 </section>
+
+<section class="lost">
+  <h2 class="visually-hidden">Адрес</h2>
+    <form class="lost-form" action="#" method="post">
+      <p>
+       <label class="your-name" for="name">Ваше имя:</label>
+       <input class="name-surname-icon" type="text" id="name" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+       <label class="your-email" for="email">Ваш e-mail:</label>
+       <input class="email-icon" type="text" id="email" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+       <textarea class="your-message" for="message">Текст письма:</textarea>
+       <input class="message-icon" type="text" id="message" name="message" placeholder="В свободной форме">
+      </p>
+      <button class="button" type="submit">
+        ОТПРАВИТЬ
+      </button>
+    </form>
+    <button class="modal-close" type="button">
+     Закрыть
+    </button>
+ </section>
+ <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <p>
+      <a href="#">
+        <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </a>
+    </p>
+    <button class="modal-close" type="button">
+     Закрыть
+    </button>
+ </section>
 </main>
 
 <footer class="main-footer">
