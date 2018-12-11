@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
 <header class="main-header">
@@ -20,19 +23,21 @@
   </div>
 
   <section class="header-mid">
-    <p class="title description">Интернет-магазин<br>
+    <p class="title-description">Интернет-магазин<br>
       строительных материалов<br>
       и интрументов для ремонта<br></p>
     <div class="mid-mid">
-     <a class="button" href="">+7(812)555-05-55</a>
-     <p>г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
+     <a class="btn-phone" href="">+7(812)555-05-55</a>
+     <p class="adress">г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
     </div>
     <ul class="acсess">
       <li><a class="btn-access" href="#">Войти</a></li>
       <li><a class="btn-registration" href="#">Регистрация</a></li>
     </ul>
+  </section>
+
   <div class="navigation">
-    <nav class="main-navigation">
+    <nav>
      <ul class="site-navigation">
       <li><a href="index.html">Главная</a></li>
       <li><a href="company.html">Компания</a></li>
@@ -41,37 +46,40 @@
       <li><a href="special-offers.html">Спецпредложения</a></li>
       <li><a href="delivery.html">Доставка</a></li>
       <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-   </div>
+     </ul>
+    </nav>
+  </div>
 </header>
 
 <main class="container">
 
-<section class="about">
- <h2 class="header-about">КОМПАНИЯ «ТЕХНОМАРТ»</h2>
-  <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-  строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
-  <p>Мы можем доставить ваш товар в самые отдаленные точки России!
-  Техномарт работает со многими транспортными компаниями:</p>
- <ul class="list-about">
-  <li>Деловые линии</li>
-  <li>Автотрейдинг</li>
-  <li>ЖелДорЭкспедиция</li>
- </ul>
-    <a class="button-about-1" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
-</section>
+<div class="information">
+ <section class="about">
+  <h2 class="header-about">КОМПАНИЯ «ТЕХНОМАРТ»</h2>
+   <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+   строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
+   <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+   Техномарт работает со многими транспортными компаниями:</p>
+  <ul class="list-about">
+   <li>Деловые линии</li>
+   <li>Автотрейдинг</li>
+   <li>ЖелДорЭкспедиция</li>
+  </ul>
+    <a class="btn-about-1" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
+ </section>
 
  <section class="contacts">
- <h2 class="contacts-header">КОНТАКТЫ</h2>
- <p>Вы можете забрать товар сами,
-заехав в наш офис.</p>
-<a class="map" href="#"><img src="img/map.jpg" width="300"
+  <h2 class="contacts-header">КОНТАКТЫ</h2>
+  <p>Вы можете забрать товар сами,
+  заехав в наш офис.</p>
+  <a class="map" href="#"><img src="img/map.jpg" width="300"
    height="158" alt="#">
-</a>
-<a class="button-about-2" href="#">ЗАБУЛДИЛИСЬ?НАПИШИТЕ НАМ!</a>
-</section>
+  </a>
+  <a class="btn-about-2" href="#">ЗАБУЛДИЛИСЬ?НАПИШИТЕ НАМ!</a>
+ </section>
+</div>
 
-<section class="lost">
+ <section class="lost">
   <h2 class="visually-hidden">Адрес</h2>
     <form class="lost-form" action="#" method="post">
       <p>
@@ -109,7 +117,7 @@
 
 <footer class="main-footer">
   <div class="footer-up">
-    <a class="main-header-logo"> Техномарт</a>
+    <a class="main-footer-logo"> Техномарт</a>
     <ul class="footer-navigation-first">
       <li><a href="company.html">Компания</a></li>
       <li><a href="news.html">Новости</a></li>
@@ -120,7 +128,7 @@
   </div>
   <div class="footer-mid">
    <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      +7 (812) 555-05-55</p>
+   +7 (812) 555-05-55</p>
    <ul class="footer-navigation-second">
    <li><a href="materials.html">Материалы</a></li>
      <li><a href="technics.html">Техника</a></li>

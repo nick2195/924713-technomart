@@ -1,0 +1,276 @@
+body {
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+  font-weight: 400;
+
+  background-color: #f3f7f8;
+  background-position: top center;
+}
+
+a {
+text-decoration: none;
+}
+
+.header-up {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.main-header-logo {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #ee3643;
+
+}
+
+.main-header-logo a:hover,
+.main-header-logo a:focus {
+  background-color: #ca2c37;
+}
+
+.main-header-logo a:active {
+  background-color: #ba2732;
+}
+
+.bookmarks a:hover,
+.bookmarks a:focus,
+.stash a:hover,
+.stash a:focus,
+.search-inside-form a:hover,
+.search-inside-form a:focus {
+  background-color: #212a3a;
+}
+
+.search-inside-form a:active {
+  background-color: #ffffff;
+}
+
+.bookmarks a:active,
+.stash a:active {
+  color: #babbbd;
+
+  background-color: #161d29;
+}
+
+.btn-order {
+  color: #ffffff;
+
+  background-color: #63a63e;
+}
+
+.btn-order a:hover
+.btn-order a:focus {
+  background-color: #5fbb2d;
+}
+
+.btn-order a:active {
+  background-color: #518534;
+}
+
+.footer-mid {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+
+  background-color: #f3f7f9;
+}
+
+.title-description {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.btn-phone {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ee3643;
+
+  background-color: #f3f7f8;
+  border: 4px #ffffff;
+
+}
+
+.btn-access,
+.bts-registration {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+  border: none;
+}
+
+.btn-access a:hover,
+.bts-registration a:hover,
+.btn-access a:focus,
+.bts-registration a:focus {
+  color: #ee3643;
+}
+
+.btn-access a:active,
+.bts-registration a:active {
+  color: #cacaca;
+}
+
+.site-navigation {
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #32425c;
+
+  list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #293449
+}
+
+.site-navigation a:active {
+  color: #a8abaf;
+
+  background-color: #1d2739;
+}
+
+.information {
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.information h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.list-about {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.list-about li:before {
+  content: "—";
+  position: relative;
+  left: -5px;
+}
+
+.btn-about-1,
+.btn-about-2 {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #ee3643;
+  border: none;
+}
+
+.main-footer {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.main-footer-logo {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.main-footer-logo a:hover,
+.main-footer-logo a:focus {
+  background-color: #ca2c37;
+}
+
+.main-footer-logo a:active {
+  background-color: #ba2732;
+}
+.footer-navigation-first,
+.footer-navigation-second {
+  list-style: none;
+}
+
+
+.footer-navigation-second {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffd180;
+}
+
+.footer-navigation-first a:hover,
+.footer-navigation-second a:hover,
+.footer-navigation-first a:focus,
+.footer-navigation-second a:focus {
+  text-decoration: underline;
+}
+
+.footer-navigation-first a:active,{
+  color: #a4abb4;
+}
+
+.footer-navigation-second a:active {
+  color: #ad956f;
+}
+
+.footer-down {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.feedback,
+.feedback-a {
+  list-style: none;
+}
+
+.feedback-a {
+  color: #f5c97d
+}
+
+.feedback-a a:hover,
+.feedback-a a:focus {
+  text-decoration: underline;
+}
+
+.feedback-a a:active {
+  color: #ee3643;
+}
+
+
+
+
+/*дальше идет catalog.html/*
