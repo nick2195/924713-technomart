@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  font-family: 'PT Sans', sans-serif;
   font-family: 'Cuprum', sans-serif;
   font-size: 17px;
   line-height: 17px;
@@ -20,7 +19,7 @@ text-decoration: none;
   line-height: 18px;
   color: #ffffff;
 
-  background-color: #293449;
+  background-color: #32425c;
 }
 
 .main-header-logo {
@@ -30,33 +29,56 @@ text-decoration: none;
   color: #ffffff;
 
   background-color: #ee3643;
-
 }
 
-.main-header-logo a:hover,
-.main-header-logo a:focus {
-  background-color: #ca2c37;
+.main-header-logo:hover,
+.main-header-logo:focus {
+  background: #ca2c37;
 }
 
-.main-header-logo a:active {
+.main-header-logo:active {
   background-color: #ba2732;
 }
 
-.bookmarks a:hover,
-.bookmarks a:focus,
-.stash a:hover,
-.stash a:focus,
-.search-inside-form a:hover,
-.search-inside-form a:focus {
+.search-inside-form input{
+ background-color: #32425c;
+ border: none;
+}
+
+.search-inside-form input:hover,
+.search-inside-form input:focus {
   background-color: #212a3a;
 }
 
-.search-inside-form a:active {
+.search-inside-form input:active {
   background-color: #ffffff;
 }
 
-.bookmarks a:active,
-.stash a:active {
+.bookmarks {
+  color: #ffffff;
+}
+
+.bookmarks:hover,
+.bookmarks:focus {
+  background-color: #212a3a;
+}
+
+.bookmarks:active {
+  color: #babbbd;
+
+  background-color: #161d29;
+}
+
+.stash {
+  color: #ffffff;
+}
+
+.stash:hover,
+.stash:focus {
+  background-color: #212a3a;
+}
+
+.stash:active {
   color: #babbbd;
 
   background-color: #161d29;
@@ -68,16 +90,17 @@ text-decoration: none;
   background-color: #63a63e;
 }
 
-.btn-order a:hover
-.btn-order a:focus {
+.btn-order:hover,
+.btn-order:focus {
   background-color: #5fbb2d;
 }
 
-.btn-order a:active {
+.btn-order:active {
   background-color: #518534;
 }
 
-.footer-mid {
+
+.header-mid {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
@@ -99,12 +122,22 @@ text-decoration: none;
   color: #ee3643;
 
   background-color: #f3f7f9;
-  border: 4px #ffffff;
+  border: 3px solid #ffffff;
+}
 
+.adress {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #32425c;
+}
+
+.access {
+  list-style: none;
 }
 
 .btn-access,
-.bts-registration {
+.btn-registration {
   font-size: 21px;
   line-height: 21px;
   font-weight: 400;
@@ -114,15 +147,18 @@ text-decoration: none;
   border: none;
 }
 
-.btn-access a:hover,
-.bts-registration a:hover,
-.btn-access a:focus,
-.bts-registration a:focus {
+.btn-access:hover,
+.btn-access:focus {
   color: #ee3643;
 }
 
-.btn-access a:active,
-.bts-registration a:active {
+.btn-registration:hover,
+.btn-registration:focus {
+  color: #ee3643;
+}
+
+.btn-access:active,
+.btn-registration:active {
   color: #cacaca;
 }
 
@@ -135,6 +171,9 @@ text-decoration: none;
   background-color: #32425c;
 
   list-style: none;
+}
+.site-navigation a{
+  color: #ffffff;
 }
 
 .site-navigation a:hover,
@@ -164,11 +203,17 @@ text-decoration: none;
   color: #000000;
 }
 
+.information p{
+  font-family: 'PT Sans', sans-serif;
+}
+
 .list-about {
   font-size: 18px;
   line-height: 20px;
   font-weight: 400;
   color: #000000;
+
+  list-style: none;
 }
 
 .list-about li:before {
@@ -189,6 +234,24 @@ text-decoration: none;
   border: none;
 }
 
+.btn-about-1:hover,
+.btn-about-1:focus {
+  background-color: #ca2c37;
+}
+
+.btn-about-1:active {
+  background-color: #ba2732;
+}
+
+.btn-about-2:hover,
+.btn-about-2:focus {
+  background-color: #ca2c37;
+}
+
+.btn-about-2:active {
+  background-color: #ba2732;
+}
+
 .main-footer {
   font-size: 18px;
   line-height: 24px;
@@ -207,12 +270,12 @@ text-decoration: none;
   background-color: #ee3643;
 }
 
-.main-footer-logo a:hover,
-.main-footer-logo a:focus {
+.main-footer-logo:hover,
+.main-footer-logo:focus {
   background-color: #ca2c37;
 }
 
-.main-footer-logo a:active {
+.main-footer-logo:active {
   background-color: #ba2732;
 }
 .footer-navigation-first,
@@ -220,6 +283,10 @@ text-decoration: none;
   list-style: none;
 }
 
+.footer-navigation-first a,
+.footer-navigation-second a {
+  color: inherit;
+}
 
 .footer-navigation-second {
   font-size: 18px;
@@ -229,13 +296,16 @@ text-decoration: none;
 }
 
 .footer-navigation-first a:hover,
+.footer-navigation-first a:focus {
+  text-decoration: underline;
+}
+
 .footer-navigation-second a:hover,
-.footer-navigation-first a:focus,
 .footer-navigation-second a:focus {
   text-decoration: underline;
 }
 
-.footer-navigation-first a:active,{
+.footer-navigation-first a:active {
   color: #a4abb4;
 }
 
@@ -261,6 +331,10 @@ text-decoration: none;
   color: #f5c97d
 }
 
+.feedback-a a {
+  color: inherit;
+}
+
 .feedback-a a:hover,
 .feedback-a a:focus {
   text-decoration: underline;
@@ -276,21 +350,37 @@ text-decoration: none;
 /*дальше идет catalog.html*/
 
 .breadcrumbs {
+  font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
-  color: #000000;
+  color: black;
   text-transform: uppercase;
   list-style: none;
 
   background-color: #ffffff;
 }
 
+.breadcrumbs a{
+  color: black;
+}
+.page-title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #32425c;
+
+  background-color: #f2f6f8;
+}
+.filter {
+  background-color: #ffffff;
+  font-family: 'PT Sans', sans-serif;
+}
 .filter fieldset {
   border: none;
 }
 
-.filter legend {
+legend {
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
@@ -304,7 +394,9 @@ text-decoration: none;
   line-height: 20px;
   text-transform:uppercase;
 }
-
+.filter-input + label {
+  color: #000000;
+}
 .filter-input:hover + label,
 .filter-input:focus + label {
   color: #000000;
@@ -323,9 +415,8 @@ text-decoration: none;
   text-transform: uppercase;
 
   background-color: #ffffff;
-  border: 1px #e5e5e5;
+  border: 1px solid #e5e5e5;
 }
-
 
 .goods div {
   font-size: 18px;
@@ -334,12 +425,15 @@ text-decoration: none;
   color: #000000;
 
   background-color: #ffffff;
-  border: 1px #e5e5e5;
+  border: 1px solid #e5e5e5;
 }
 
-
+.goods-each-header {
+  font-family: 'PT Sans', sans-serif;
+}
 
 .each-price {
+  font-family: 'PT Sans', sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -357,6 +451,14 @@ text-decoration: none;
   background-color: #63a63e;
 }
 
+.button-goods-basket:hover,
+.button-goods-basket:focus {
+  background-color: #5fbb2d;
+}
+.button-goods-basket:active{
+  background-color: #518534;
+}
+
 .button-goods-bookmark {
   font-size: 14px;
   line-height: 18px;
@@ -367,27 +469,18 @@ text-decoration: none;
   background-color: #ffffff;
   border: 3px #63a63e;
 }
-.button-goods-basket a:hover,
-.button-goods-basket a:focus {
-  background-color: #5fbb2d;
+.button-goods-bookmark:hover,
+.button-goods-bookmark:focus {
+  border:1px solid #32425c;
 }
-
-.button-goods-bookmark a:hover,
-.button-goods-bookmark a:focus {
-  background-color: #32425c;
-}
-
-.button-goods-basket a:active{
-  background-color: #518534;
-}
-
-.button-goods-bookmark a:active{
-  background-color: #32425c;
+.button-goods-bookmark:active{
+  border:1px solid #32425c;
   opacity: 0.3;
 }
 
 .button-goods-buy {
   font-size: 17px;
+  font-family: 'PT Sans', sans-serif;
   line-height: 18px;
   font-weight: bold;
   text-transform: uppercase;

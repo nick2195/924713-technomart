@@ -6,26 +6,27 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href='css/style.css' rel='stylesheet'>
   </head>
   <body>
 <header class="main-header">
   <div class="header-up">
-    <a class="main-header-logo">Техномарт</a>
+    <a class="main-header-logo" href="index.html">Техномарт</a>
     <form class="search-form" action="#" method="post">
     <p class="search-inside-form">
       <input type="text" name="search" placeholder="Поиск:">
     </p>
     <button class="visually-hidden" type="submit"></button>
     </form>
-    <span class="bookmarks">Закладки:0</span>
-    <span class="stash">Корзина:0</span>
+    <a class="bookmarks" href="#" >Закладки:0</a>
+    <a class="stash" href="#" >Корзина:0</a>
     <a class="btn-order" href="#">Оформить заказ</a>
   </div>
 
   <section class="header-mid">
     <p class="title-description">Интернет-магазин<br>
       строительных материалов<br>
-      и интрументов для ремонта<br></p>
+      и интрументов для ремонта</p>
     <div class="mid-mid">
      <a class="btn-phone" href="">+7(812)555-05-55</a>
      <p class="adress">г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
@@ -78,46 +79,11 @@
   <a class="btn-about-2" href="#">ЗАБУЛДИЛИСЬ?НАПИШИТЕ НАМ!</a>
  </section>
 </div>
-
- <section class="lost">
-  <h2 class="visually-hidden">Адрес</h2>
-    <form class="lost-form" action="#" method="post">
-      <p>
-       <label class="your-name" for="name">Ваше имя:</label>
-       <input class="name-surname-icon" type="text" id="name" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-       <label class="your-email" for="email">Ваш e-mail:</label>
-       <input class="email-icon" type="text" id="email" name="email" placeholder="email@example.com">
-      </p>
-      <p>
-       <textarea class="your-message" for="message">Текст письма:</textarea>
-       <input class="message-icon" type="text" id="message" name="message" placeholder="В свободной форме">
-      </p>
-      <button class="button" type="submit">
-        ОТПРАВИТЬ
-      </button>
-    </form>
-    <button class="modal-close" type="button">
-     Закрыть
-    </button>
- </section>
- <section class="modal modal-map">
-    <h2 class="visually-hidden">Как до нас добраться</h2>
-    <p>
-      <a href="#">
-        <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      </a>
-    </p>
-    <button class="modal-close" type="button">
-     Закрыть
-    </button>
- </section>
 </main>
 
 <footer class="main-footer">
   <div class="footer-up">
-    <a class="main-footer-logo"> Техномарт</a>
+    <a class="main-footer-logo" href="index.html">Техномарт</a>
     <ul class="footer-navigation-first">
       <li><a href="company.html">Компания</a></li>
       <li><a href="news.html">Новости</a></li>
@@ -127,7 +93,7 @@
     </ul>
   </div>
   <div class="footer-mid">
-   <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+   <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
    +7 (812) 555-05-55</p>
    <ul class="footer-navigation-second">
    <li><a href="materials.html">Материалы</a></li>
@@ -137,12 +103,12 @@
    </ul>
   </div>
   <div class="footer-down">
-   <p>  © 2010-2016 Компания «Техномарт»
+   <p>  © 2010-2016 Компания «Техномарт»<br>
      Все права защищены</p>
      <ul class="social-buttons">
-       <li><a class="social-button-vk" href="#"></a></li>
-       <li><a class="social-button-fb" href="#"></a></li>
-       <li><a class="social-button-inst" href="#"></a></li>
+       <li><a class="social-button-vk" href="#">ВК</a></li>
+       <li><a class="social-button-fb" href="#">ФЕЙСБУК</a></li>
+       <li><a class="social-button-inst" href="#">ИНСТ</a></li>
      </ul>
      <ul class="feedback">
        <li>Обратная связь:</li>
@@ -154,5 +120,39 @@
      </ul>
   </div>
   </footer>
+  <section class="lost">
+   <h2 class="visually-hidden">Адрес</h2>
+     <form class="lost-form" action="#" method="post">
+       <p>
+        <label class="your-name" for="name">Ваше имя:</label>
+        <input class="name-surname-icon" type="text" id="name" name="name" placeholder="Имя Фамилия">
+       </p>
+       <p>
+        <label class="your-email" for="email">Ваш e-mail:</label>
+        <input class="email-icon" type="text" id="email" name="email" placeholder="email@example.com">
+       </p>
+       <p>
+        <textarea class="your-message" for="message">Текст письма:</textarea>
+        <input class="message-icon" type="text" id="message" name="message" placeholder="В свободной форме">
+       </p>
+       <button class="button" type="submit">
+         ОТПРАВИТЬ
+       </button>
+     </form>
+     <button class="modal-close" type="button">
+      Закрыть
+     </button>
+  </section>
+  <section class="modal modal-map">
+     <h2 class="visually-hidden">Как до нас добраться</h2>
+     <p>
+       <a href="#">
+         <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+       </a>
+     </p>
+     <button class="modal-close" type="button">
+      Закрыть
+     </button>
+  </section>
 </body>
 </html>
