@@ -488,3 +488,75 @@ legend {
 
   background-color: #ee3643;
 }
+
+.main-header {
+  margin-bottom: 59px;
+  min-height: 320px;
+}
+
+.header-up {
+  min-height: 42px;
+  margin-bottom: 46px;
+  background-color: #293449;
+}
+
+.container {
+ width: 940px;
+ margin: 0 auto;
+ padding: 0 10px;
+}
+
+.header-up .container {
+  display: flex;
+}
+
+.main-header-logo {
+  width: 220px;
+}
+
+.search-form {
+  width: 260px;
+}
+
+.start-btns {
+  width: 300px;
+}
+
+.header-mid {
+  min-height: 70px;
+  margin-bottom: 45px;
+}
+
+.header-mid .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-description {
+  width: 300px;
+}
+
+.mid-mid {
+  width: 300px;
+}
+
+.access {
+  width: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 940px;
+  min-height: 60px;
+  margin-bottom: 60px;
+}
+
+
+.site-navigation .container {
+  display: flex;
+  justify-content: space-between;
+}
