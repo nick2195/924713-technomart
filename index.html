@@ -10,37 +10,41 @@
   </head>
   <body>
 <header class="main-header">
-  <div class="header-up">
-    <div class="container">
+ <div class="header-up">
+  <div class="container">
+   <div class="header-up-wrapper">
     <a class="main-header-logo" href="index.html">Техномарт</a>
     <form class="search-form" action="#" method="post">
     <p class="search-inside-form">
       <input type="text" name="search" placeholder="Поиск:">
     </p>
-    <button class="visually-hidden" type="submit"></button>
+    <button class="visually-hidden" type="submit">отправить</button>
     </form>
    <div class="start-btns">
     <a class="bookmarks" href="#" >Закладки:0</a>
     <a class="stash" href="#" >Корзина:0</a>
     <a class="btn-order" href="#">Оформить заказ</a>
+   </div>
   </div>
  </div>
 </div>
 
   <section class="header-mid">
-    <div class="container">
-    <p class="title-description">Интернет-магазин<br>
+   <div class="container">
+    <div class="header-mid-wrapper">
+     <p class="title-description">Интернет-магазин<br>
       строительных материалов<br>
       и интрументов для ремонта</p>
-    <div class="mid-mid">
+     <div class="mid-mid">
      <a class="btn-phone" href="">+7(812)555-05-55</a>
      <p class="adress">г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
+     </div>
+     <div class="access">
+      <a class="btn-access" href="#">Войти</a>
+      <a class="btn-registration" href="#">Регистрация</a>
+     </div>
     </div>
-    <ul class="acсess">
-      <li><a class="btn-access" href="#">Войти</a></li>
-      <li><a class="btn-registration" href="#">Регистрация</a></li>
-    </ul>
-  </div>
+   </div>
   </section>
 
   <div class="navigation">
@@ -96,7 +100,6 @@
 <footer class="main-footer">
   <div class="container">
   <div class="footer-up">
-    <div class="footer-up-wrapper">
     <a class="main-footer-logo" href="index.html">Техномарт</a>
     <ul class="footer-navigation-first">
       <li><a href="company.html">Компания</a></li>
@@ -106,62 +109,74 @@
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
   </div>
-  </div>
   <div class="footer-mid">
-    <div class="footer-mid-wrapper">
-   <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-   +7 (812) 555-05-55</p>
-   <ul class="footer-navigation-second">
-   <li><a href="materials.html">Материалы</a></li>
+     <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+      +7 (812) 555-05-55</p>
+    <ul class="footer-navigation-second">
+     <li><a href="materials.html">Материалы</a></li>
      <li><a href="technics.html">Техника</a></li>
      <li><a href="tool.html">Инструмент</a></li>
      <li><a href="discounts.html">Спецпредложения</a></li>
-   </ul>
+    </ul>
   </div>
-  </div>
+ </div>
+<div class="footer-down-color">
+ <div class="container">
   <div class="footer-down">
-    <div class="footer-down-wrapper">
-   <p>  © 2010-2016 Компания «Техномарт»<br>
+     <p>  © 2010-2016 Компания «Техномарт»<br>
      Все права защищены</p>
      <ul class="social-buttons">
        <li><a class="social-button-vk" href="#">ВК</a></li>
        <li><a class="social-button-fb" href="#">ФЕЙСБУК</a></li>
        <li><a class="social-button-inst" href="#">ИНСТ</a></li>
      </ul>
-     <ul class="feedback">
-       <li>Обратная связь:</li>
-       <li>Разработано —</li>
-     </ul>
-     <ul class="feedback-a">
-       <li><a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
-       <li><a href="https://htmlacademy.ru">htmlacademy.ru</a></li>
-     </ul>
+     <div class="communication">
+       <div>
+       <p class="feedback">Обратная связь:</p>
+       <p><a class="feedback-a" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a><p>
+       </div>
+       <div>
+       <p class="feedback">Разработано —</p>
+       <p><a class="feedback-a" href="https://htmlacademy.ru">htmlacademy.ru</a></p>
+       </div>
+      </div>
+     </div>
+    </div>
    </div>
-   </div>
-  </div>
-  </footer>
+</footer>
   <section class="lost">
+    <div class="lost-wrapper">
+    <button class="modal-close" type="button">
+     Закрыть
+    </button>
    <h2 class="visually-hidden">Адрес</h2>
      <form class="lost-form" action="#" method="post">
+      <div class="about-you">
        <p>
-        <label class="your-name" for="name">Ваше имя:</label>
+        <span>Ваше имя:</span>
+        <br>
         <input class="name-surname-icon" type="text" id="name" name="name" placeholder="Имя Фамилия">
        </p>
        <p>
-        <label class="your-email" for="email">Ваш e-mail:</label>
+        <span>Ваш e-mail:</span>
+        <br>
         <input class="email-icon" type="text" id="email" name="email" placeholder="email@example.com">
        </p>
+     </div>
+     <div class="message-wrapper">
        <p>
-        <textarea class="your-message" for="message">Текст письма:</textarea>
+        <span>Текст письма:</span>
+        <br>
         <input class="message-icon" type="text" id="message" name="message" placeholder="В свободной форме">
        </p>
-       <button class="button" type="submit">
+     </div>
+     <div class="btn-delivery">
+       <button class="button-delivery" type="submit">
          ОТПРАВИТЬ
        </button>
+     </div>
      </form>
-     <button class="modal-close" type="button">
-      Закрыть
-     </button>
+   </div>
   </section>
   <section class="modal modal-map">
      <h2 class="visually-hidden">Как до нас добраться</h2>
