@@ -9,48 +9,58 @@
     <link href='css/style.css' rel='stylesheet'>
   </head>
   <body>
-<header class="main-header">
-  <div class="header-up">
-    <a class="main-header-logo" href="index.html">Техномарт</a>
-    <form class="search-form" action="#" method="post">
-    <p class="search-inside-form">
-      <input type="text" name="search" placeholder="Поиск:">
-    </p>
-    <button class="visually-hidden" type="submit"></button>
-    </form>
-    <a class="bookmarks" href="#" >Закладки:0</a>
-    <a class="stash" href="#" >Корзина:0</a>
-    <a class="btn-order" href="#">Оформить заказ</a>
-  </div>
-
-  <section class="header-mid">
-    <p class="title-description">Интернет-магазин<br>
-      строительных материалов<br>
-      и интрументов для ремонта</p>
-    <div class="mid-mid">
-     <a class="btn-phone" href="">+7(812)555-05-55</a>
-     <p class="adress">г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
+    <header class="main-header">
+     <div class="header-up">
+      <div class="container">
+       <div class="header-up-wrapper">
+        <a class="main-header-logo" href="index.html">Техномарт</a>
+        <form class="search-form" action="#" method="post">
+        <p class="search-inside-form">
+          <input type="text" name="search" placeholder="Поиск:">
+        </p>
+        <button class="visually-hidden" type="submit">отправить</button>
+        </form>
+        <a class="bookmarks" href="#" >Закладки: 0</a>
+        <a class="stash" href="#" >Корзина: 0</a>
+        <a class="btn-order" href="#">Оформить заказ</a>
+      </div>
+     </div>
     </div>
-    <ul class="acсess">
-      <li><a class="btn-access" href="#">Войти</a></li>
-      <li><a class="btn-registration" href="#">Регистрация</a></li>
-    </ul>
-  </section>
 
-  <div class="navigation">
-    <nav>
-     <ul class="site-navigation">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="company.html">Компания</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="news.html">Новости</a></li>
-      <li><a href="special-offers.html">Спецпредложения</a></li>
-      <li><a href="delivery.html">Доставка</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-     </ul>
-    </nav>
-  </div>
-</header>
+      <section class="header-mid">
+       <div class="container">
+        <div class="header-mid-wrapper">
+         <p class="title-description">Интернет-магазин<br>
+          строительных материалов<br>
+          и интрументов для ремонта</p>
+         <div class="mid-mid">
+         <a class="btn-phone" href="">+7(812)555-05-55</a>
+         <p class="adress">г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
+         </div>
+         <div class="access">
+          <a class="btn-access" href="#">Войти</a>
+          <a class="btn-registration" href="#">Регистрация</a>
+         </div>
+        </div>
+       </div>
+      </section>
+
+      <div class="navigation">
+        <nav>
+        <div class="container">
+         <ul class="site-navigation container">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="company.html">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="special-offers.html">Спецпредложения</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+         </ul>
+       </div>
+        </nav>
+      </div>
+    </header>
 
 <main class="container">
 
@@ -61,6 +71,7 @@
     <li><a href="#">Перфораторы</a></li>
   </ul>
   <h1 class="page-title">Перфораторы</h1>
+  <div class="catalog">
     <form class="filter" action="#" method="post">
      <fieldset>
       <legend>ПРОИЗВОДИТЕЛИ:</legend>
@@ -104,7 +115,8 @@
    </form>
 
  <section class="goods">
-    <div class="BFG-3000">
+   <div class="goods-item">
+    <div class="BFG">
        <h3 class="goods-each-header">Перфоратор BOSCH<br>
        BFG 3000<br>
        </h3>
@@ -114,7 +126,7 @@
        <a class="button-goods-basket" href="#">КУПИТЬ</a>
        <a class="button-goods-bookmark" href="#">В ЗАКЛАДКИ</a>
     </div>
-    <div class="BFG-6000">
+    <div class="BFG">
        <h3 class="goods-each-header">Перфоратор BOSCH<br>
        BFG 6000<br>
        </h3>
@@ -124,7 +136,7 @@
        <a class="button-goods-basket" href="#">КУПИТЬ</a>
        <a class="button-goods-bookmark" href="#">В ЗАКЛАДКИ</a>
     </div>
-    <div class="BFG-2000">
+    <div class="BFG">
        <h3 class="goods-each-header">Перфоратор BOSCH<br>
        BFG 2000<br>
        </h3>
@@ -133,7 +145,7 @@
        <a class="button-goods-basket" href="#">КУПИТЬ</a>
        <a class="button-goods-bookmark" href="#">В ЗАКЛАДКИ</a>
     </div>
-    <div class="BFG-3000">
+    <div class="BFG">
       <h3 class="goods-each-header">Перфоратор BOSCH<br>
       BFG 3000<br>
       </h3>
@@ -143,7 +155,7 @@
       <a class="button-goods-basket" href="#">КУПИТЬ</a>
       <a class="button-goods-bookmark" href="#">В ЗАКЛАДКИ</a>
     </div>
-    <div class="BFG-6000">
+    <div class="BFG">
       <h3 class="goods-each-header">Перфоратор BOSCH<br>
       BFG 6000<br>
       </h3>
@@ -153,7 +165,7 @@
       <a class="button-goods-basket" href="#">КУПИТЬ</a>
       <a class="button-goods-bookmark" href="#">В ЗАКЛАДКИ</a>
     </div>
-    <div class="BFG-2000">
+    <div class="BFG">
       <h3 class="goods-each-header">Перфоратор BOSCH<br>
       BFG 2000<br>
       </h3>
@@ -162,7 +174,7 @@
       <a class="button-goods-basket" href="#">КУПИТЬ</a>
       <a class="button-goods-bookmark" href="#">В ЗАКЛАДКИ</a>
     </div>
-    <div class="BFG-3000">
+    <div class="BFG">
      <h3 class="goods-each-header">Перфоратор BOSCH<br>
      BFG 3000<br>
      </h3>
@@ -172,7 +184,7 @@
      <a class="button-goods-basket" href="#">КУПИТЬ</a>
      <a class="button-goods-bookmark" href="#">В ЗАКЛАДКИ</a>
     </div>
-    <div class="BFG-6000">
+    <div class="BFG">
      <h3 class="goods-each-header">Перфоратор BOSCH<br>
      BFG 6000<br>
      </h3>
@@ -182,7 +194,7 @@
      <a class="button-goods-basket" href="#">КУПИТЬ</a>
      <a class="button-goods-bookmark" href="#">В ЗАКЛАДКИ</a>
     </div>
-    <div class="BFG-2000">
+    <div class="BFG">
      <h3 class="goods-each-header">Перфоратор BOSCH<br>
      BFG 2000<br>
      </h3>
@@ -191,10 +203,13 @@
      <a class="button-goods-basket" href="#">КУПИТЬ</a>
      <a class="button-goods-bookmark" href="#">В ЗАКЛАДКИ</a>
     </div>
+  </div>
   </section>
+</div>
 </main>
 
 <footer class="main-footer">
+  <div class="container">
   <div class="footer-up">
     <a class="main-footer-logo" href="index.html">Техномарт</a>
     <ul class="footer-navigation-first">
@@ -206,38 +221,53 @@
     </ul>
   </div>
   <div class="footer-mid">
-   <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-   +7 (812) 555-05-55</p>
-   <ul class="footer-navigation-second">
-   <li><a href="materials.html">Материалы</a></li>
+     <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+      +7 (812) 555-05-55</p>
+    <ul class="footer-navigation-second">
+     <li><a href="materials.html">Материалы</a></li>
      <li><a href="technics.html">Техника</a></li>
      <li><a href="tool.html">Инструмент</a></li>
      <li><a href="discounts.html">Спецпредложения</a></li>
-   </ul>
+    </ul>
   </div>
+ </div>
+<div class="footer-down-color">
+ <div class="container">
   <div class="footer-down">
-   <p>  © 2010-2016 Компания «Техномарт»<br>
+     <p>  © 2010-2016 Компания «Техномарт»<br>
      Все права защищены</p>
      <ul class="social-buttons">
        <li><a class="social-button-vk" href="#">ВК</a></li>
        <li><a class="social-button-fb" href="#">ФЕЙСБУК</a></li>
        <li><a class="social-button-inst" href="#">ИНСТ</a></li>
      </ul>
-     <ul class="feedback">
-       <li>Обратная связь:</li>
-       <li>Разработано —</li>
-     </ul>
-     <ul class="feedback-a">
-       <li><a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
-       <li><a href="https://htmlacademy.ru">htmlacademy.ru</a></li>
-     </ul>
-  </div>
-  </footer>
-  <section class="add-goods">
-   <h2 class="header-add-goods">Товар добавлен в корзину!</h2>
-   <a class="btn-checkout" href="#">ОФОРМИТЬ ЗАКАЗ</a>
-   <a class="continue-shopping" href="catalog.html">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+     <div class="communication">
+       <div>
+       <p class="feedback">Обратная связь:</p>
+       <p><a class="feedback-a" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a><p>
+       </div>
+       <div>
+       <p class="feedback">Разработано —</p>
+       <p><a class="feedback-a" href="https://htmlacademy.ru">htmlacademy.ru</a></p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+</footer>
+
+ <div class="goods-form">
+  <div class="add-goods">
    <button class="modal-close" type="button">Закрыть</button>
-  </section>
+  <div class="header-add-goods-wrapper">
+   <span class="header-add-goods">Товар добавлен в корзину!</span>
+ </div>
+ </div>
+  <div class="goods-buttons">
+   <a class="btn-checkout" href="#">Оформить заказ</a>
+   <a class="continue-shopping" href="catalog.html">Продолжить покупки</a>
+ </div>
+</div>
+
 </body>
 </html>
