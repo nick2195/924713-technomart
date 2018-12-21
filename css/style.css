@@ -838,13 +838,11 @@ legend {
 
 .goods-form {
   display:none;
-  display: flex;
   flex-flow: column;
   justify-content: space-between;
   width: 620px;
   min-height: 283px;
   border: red 1px solid;
-  display: flex;
   flex-direction: column;
 }
 
