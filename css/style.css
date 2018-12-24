@@ -431,66 +431,67 @@ legend {
   border: 1px solid #e5e5e5;
 }
 
-.goods div {
+.catalog-items {
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
   color: #000000;
 
   background-color: #ffffff;
-  border: 1px solid #e5e5e5;
+
 }
 
-.goods-each-header {
-  font-family: 'PT Sans', sans-serif;
+.catalog-item .actions .button-goods-basket,
+.catalog-item .actions .button-goods-bookmark{
+    display:block;
+    width:129px;
+    margin:0 auto;
+    margin-bottom:7px;
+    padding:7px 0;
+    border:3px solid #63a63e;
+    border-bottom-color:#367315;
+    background-color:#63a63e;
+    color:white;
+    font-size:14px;
+    font-weight:normal;
+    font-family:"Cuprum", sans-serif;
+    line-height:18px;
+    text-decoration:none;
+    text-transform:uppercase;
+    border-radius:3px;
 }
 
-.each-price {
-  font-family: 'PT Sans', sans-serif;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: bold;
-  color: #999999;
-  text-decoration: line-through;
+.catalog-item .actions .button-goods-bookmark{
+    color:#32425c;
+    background:white;
+    border-bottom-color:#63a63e;
 }
 
-.button-goods-basket {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #ffffff;
-
-  background-color: #63a63e;
-}
-
-.button-goods-basket:hover,
-.button-goods-basket:focus {
+.actions .button-goods-basket:hover,
+.actions .button-goods-basket:hover {
   background-color: #5fbb2d;
+  border:3px solid #5fbb2d;
 }
-.button-goods-basket:active{
+.actions .button-goods-basket:active{
   background-color: #518534;
+  border:3px solid #518534;
 }
 
-.button-goods-bookmark {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #32425c;
-
-  background-color: #ffffff;
-  border: 3px #63a63e;
+.actions .button-goods-bookmark:hover,
+.actions .button-goods-bookmark:focus {
+  border:3px solid #32425c;
 }
-.button-goods-bookmark:hover,
-.button-goods-bookmark:focus {
-  border:1px solid #32425c;
-}
-.button-goods-bookmark:active{
-  border:1px solid #32425c;
+.actions .button-goods-bookmark:active {
+  border:3px solid #32425c;
   opacity: 0.3;
 }
 
+.catalog-item .actions{
+    display:none;
+}
+.catalog-item:hover .actions{
+    display:block;
+}
 .button-goods-buy {
   font-size: 17px;
   font-family: 'PT Sans', sans-serif;
@@ -500,6 +501,16 @@ legend {
   color: #ffffff;
 
   background-color: #ee3643;
+}
+
+.catalog-item:nth-child(3n){
+    margin-right:0;
+}
+.catalog-items{
+    font-size:0;
+}
+.catalog-item{
+    font-size:16px;
 }
 
 .main-header {
@@ -705,7 +716,14 @@ legend {
   width: 300px;
   margin-right: 13px;
 }
+
+
+
+
 /*дальше идет catalog.html*/
+
+
+
 
 .page-title {
   margin-bottom: 20px;
@@ -733,26 +751,106 @@ legend {
   min-height: 896px;
 }
 
+.catalog {
+  display: flex;
+  justify-content: space-between;
+}
 .goods {
   width: 700px;
   min-height: 1084px;
 }
 
-.catalog {
-  display: flex;
-  justify-content: space-between;
+.catalog-items{
+    width:700px;
+    margin:20px auto;
+}
+.catalog-item{
+    position:relative;
+    display:inline-block;
+    width:218px;
+    margin-right:20px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    line-height:20px;
+    font-weight:bold;
+    text-align:center;
+}
+.catalog-item .flag{
+    position:absolute;
+    top:-1px;
+    right:-1px;
+    width:60px;
+    height:60px;
+    text-indent:-1000px;
+    overflow:hidden;
+     z-index:20;
+}
+.catalog-item .flag-new{
+    background:url("img/new-flag-1.png") no-repeat 0 0;
 }
 
-.BFG {
-  margin-bottom: 20px;
-  width: 220px;
-  min-height: 318px;
+.catalog-item .image{
+    width:218px;
+    height:168px;
 }
 
-.goods-item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.catalog-item .image img{
+    max-width:100%;
+}
+
+.catalog-item .title{
+    min-height:40px;
+    padding:0 25px;
+    margin-top:10px;
+    margin-bottom:15px;
+}
+
+.title{
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: 'Cuprum','Arial',sans-serif;
+}
+
+.catalog-item .discount{
+    min-height:20px;
+    margin-top:15px;
+    margin-bottom:10px;
+    color:#999;
+    text-decoration:line-through;
+}
+
+.catalog-item .button-goods-buy{
+    position:relative;
+    width:80px;
+    margin:10px auto;
+    margin-bottom:20px;
+    padding:10px 30px;
+    color:white;
+    background:#ee3643;
+    border-radius:3px;
+}
+
+.catalog-item .button-goods-buy:after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:-20px;
+    width:0;
+    height:0;
+    border:20px solid white;
+    border-left-color:#ee3643;
+}
+
+.catalog-item .actions{
+    position:absolute;
+    top:0;
+    left:0;
+    width:218px;
+    height:88px;
+    padding:40px 0;
+    background-color:rgba(255,255,255,0.9);
+    z-index:10;
 }
 
 .lost {
